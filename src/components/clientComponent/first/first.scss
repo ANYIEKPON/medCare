@@ -1,0 +1,283 @@
+.div_first_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 10px;
+  width: 95%;
+  padding: 2rem 1rem;
+
+  .div_first_wraper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .immg {
+      display: flex;
+      overflow: hidden;
+
+      img {
+        display: flex;
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+      }
+    }
+
+    h2 {
+      display: flex;
+      color: #5a8690;
+      margin: 10px 0px;
+    }
+
+    .infoDiv {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 0.5rem;
+      justify-self: flex-start;
+      margin-top: 1rem;
+
+      h3 {
+        font-size: 16px;
+        font-weight: lighter;
+      }
+
+      .dateDiv {
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        padding: 3px 5px;
+
+        p {
+          font-weight: lighter;
+          color: #ababab;
+        }
+      }
+    }
+    .disorderDiv {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 0.5rem;
+      margin-top: 1rem;
+
+      h3 {
+        font-size: 16px;
+        font-weight: lighter;
+      }
+
+      .disDiv {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        padding: 5px 10px;
+
+        .arythmia {
+          color: #6b8eed;
+          background-color: #eaeffc;
+        }
+
+        .anxiety {
+          color: #bc8cc9;
+          background-color: #f7f0f9;
+        }
+
+        .presure {
+          color: #d3af4d;
+          background-color: #fcfaf4;
+        }
+
+        span {
+          display: flex;
+          width: max-content;
+          padding: 10px 20px;
+          border-radius: 20px;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .lastChecked {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 0.5rem;
+
+      h3 {
+        font-size: 16px;
+        font-weight: lighter;
+      }
+
+      .chcked {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 15px;
+        background-color: #f3f8fd;
+        margin-top: 10px;
+        gap: 0.8rem;
+        color: #a1b1b8;
+      }
+    }
+
+    .notDisplayed {
+      display: none;
+    }
+
+    .showmore {
+      display: flex;
+      align-self: flex-end;
+      margin-top: 2rem;
+      font-size: 16px;
+      color: #5a8690;
+      cursor: pointer;
+    }
+  }
+}
+
+$medium: 768px;
+$small: 640px;
+$large: 981px;
+
+@media screen and (min-width: $large) {
+  .div_first_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    width: 95%;
+    padding: 2rem 1rem;
+
+    .div_first_wraper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      .immg {
+        display: flex;
+        overflow: hidden;
+
+        img {
+          display: flex;
+          width: 130px;
+          height: 130px;
+          border-radius: 50%;
+        }
+      }
+
+      h2 {
+        display: flex;
+        color: #5a8690;
+        margin: 10px 0px;
+      }
+
+      .infoDiv {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+        justify-self: flex-start;
+        margin-top: 1rem;
+
+        h3 {
+          font-size: 16px;
+          font-weight: lighter;
+        }
+
+        .dateDiv {
+          display: flex;
+          width: 80%;
+          justify-content: space-between;
+          padding: 3px 5px;
+
+          p {
+            font-weight: lighter;
+            color: #ababab;
+          }
+        }
+      }
+      .disorderDiv {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+        margin-top: 1rem;
+
+        h3 {
+          font-size: 16px;
+          font-weight: lighter;
+        }
+
+        .disDiv {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.5rem;
+          padding: 5px 10px;
+
+          .arythmia {
+            color: #6b8eed;
+            background-color: #eaeffc;
+          }
+
+          .anxiety {
+            color: #bc8cc9;
+            background-color: #f7f0f9;
+          }
+
+          .presure {
+            color: #d3af4d;
+            background-color: #fcfaf4;
+          }
+
+          span {
+            display: flex;
+            width: max-content;
+            padding: 10px 20px;
+            border-radius: 20px;
+            margin-right: 10px;
+          }
+        }
+      }
+
+      .lastChecked {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 0.5rem;
+
+        h3 {
+          font-size: 16px;
+          font-weight: lighter;
+        }
+
+        .chcked {
+          display: flex;
+          flex-direction: column;
+          padding: 20px 15px;
+          background-color: #f3f8fd;
+          margin-top: 10px;
+          gap: 0.8rem;
+          color: #a1b1b8;
+        }
+      }
+
+      .notDisplayed {
+        display: none;
+      }
+
+      .showmore {
+        display: flex;
+        align-self: flex-end;
+        margin-top: 2rem;
+        font-size: 16px;
+        color: #5a8690;
+        cursor: pointer;
+      }
+    }
+  }
+}

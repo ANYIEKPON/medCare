@@ -1,0 +1,117 @@
+.footerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .footerWraper {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+    justify-content: space-between;
+    padding: 1rem;
+    gap: 2rem;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      color: #29626f;
+
+      .divIcon {
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      color: #29626f;
+      gap: 1rem;
+
+      .first {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+
+        h4 {
+          display: flex;
+          font-weight: bolder;
+        }
+
+        .others {
+          display: flex;
+          flex-direction: column;
+          font-weight: lighter;
+          margin-top: 1rem;
+          gap: 10px;
+        }
+      }
+    }
+  }
+}
+
+$medium: 768px;
+$small: 640px;
+$large: 981px;
+
+@media screen and (min-width: $large) {
+  .footerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .footerWraper {
+      display: flex;
+      flex-direction: row;
+      width: 90%;
+      justify-content: space-between;
+      padding: 1rem;
+      gap: 2rem;
+
+      .left {
+        display: flex;
+        flex: 3;
+        flex-direction: column;
+        color: #29626f;
+
+        .divIcon {
+          display: flex;
+          gap: 0.5rem;
+          margin-top: 0.5rem;
+        }
+      }
+
+      .right {
+        display: flex;
+        flex: 7;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+        color: #29626f;
+        gap: 4rem;
+
+        .first {
+          display: flex;
+          flex-direction: column;
+          margin-top: 1rem;
+
+          h4 {
+            display: flex;
+            font-weight: bolder;
+          }
+
+          .others {
+            display: flex;
+            flex-direction: column;
+            font-weight: lighter;
+            margin-top: 1rem;
+            gap: 10px;
+          }
+        }
+      }
+    }
+  }
+}

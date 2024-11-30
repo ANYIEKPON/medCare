@@ -1,0 +1,394 @@
+.fortDiv {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0px;
+
+  .fortWraper {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f8fd;
+    border-radius: 10px;
+    padding: 1rem 0px;
+    gap: 0rem;
+
+    .leftDiv {
+      display: none;
+      position: relative;
+      flex-direction: column;
+      flex: 5;
+      justify-content: center;
+      align-items: center;
+      height: max-content;
+      padding: 1.3rem 0rem;
+
+      .img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 70%;
+        max-height: 360px;
+        margin-top: 0rem;
+
+        img {
+          height: 350px;
+          width: 400px;
+          border-radius: 45%;
+          overflow: hidden;
+        }
+      }
+
+      .sideSluh {
+        display: flex;
+        width: max-content;
+        gap: 7px;
+        font-size: 10px;
+        position: absolute;
+        background-color: white;
+        padding: 5px;
+        border-radius: 6px;
+        font-weight: lighter;
+        justify-content: center;
+        align-items: center;
+        left: 50px;
+        top: 7.5rem;
+      }
+      .sideSluhS {
+        display: flex;
+        width: max-content;
+        gap: 7px;
+        font-size: 10px;
+        position: absolute;
+        background-color: white;
+        padding: 5px;
+        border-radius: 6px;
+        font-weight: lighter;
+        justify-content: center;
+        align-items: center;
+        right: 80px;
+        bottom: 5rem;
+      }
+    }
+
+    .rigtDiv {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 95%;
+      margin-bottom: 1rem;
+      gap: 1rem;
+
+      h3 {
+        font-size: 2.5vw;
+        text-align: center;
+        width: 60%;
+        color: #29626f;
+        font-weight: bolder;
+        line-height: 30px;
+      }
+
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        width: 90%;
+        padding: 10px 0px;
+
+        li {
+          display: flex;
+          background-color: white;
+          justify-content: center;
+          align-items: center;
+          border-radius: 10px;
+
+          .div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px 10px;
+
+            .neuro {
+              display: flex;
+              background-color: #fcfaf4;
+              justify-content: center;
+              align-items: center;
+              border: none;
+              border-radius: 50%;
+              padding: 10px;
+              width: 30px;
+              height: 30px;
+              max-width: 60px;
+              max-height: 60px;
+
+              img {
+                display: flex;
+                width: 30px;
+                height: 30px;
+                max-width: 60px;
+                max-height: 60px;
+              }
+            }
+            .health {
+              display: flex;
+              background-color: #f3f8fd;
+              justify-content: center;
+              align-items: center;
+              border: none;
+              border-radius: 50%;
+              padding: 10px;
+              width: 30px;
+              height: 30px;
+              max-width: 60px;
+              max-height: 60px;
+
+              img {
+                display: flex;
+                width: 30px;
+                height: 30px;
+                max-width: 60px;
+                max-height: 60px;
+              }
+            }
+            .head {
+              display: flex;
+              background-color: #f7f0f9;
+              justify-content: center;
+              align-items: center;
+              border: none;
+              border-radius: 50%;
+              padding: 10px;
+              width: 30px;
+              height: 30px;
+              max-width: 60px;
+              max-height: 60px;
+
+              img {
+                display: flex;
+                width: 30px;
+                height: 30px;
+                max-width: 60px;
+                max-height: 60px;
+              }
+            }
+
+            .ico {
+              display: flex;
+              background-color: #eaeffc;
+              justify-content: center;
+              align-items: center;
+              border: none;
+              border-radius: 50%;
+              padding: 10px;
+              width: 30px;
+              height: 30px;
+              max-width: 60px;
+              max-height: 60px;
+
+              img {
+                display: flex;
+                width: 30px;
+                height: 30px;
+                max-width: 60px;
+                max-height: 60px;
+              }
+            }
+
+            span {
+              background-color: inherit;
+              font-size: 2.5vw;
+              width: max-content;
+            }
+          }
+        }
+      }
+
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        color: #29626f;
+        padding: 10px 15px;
+        width: 50%;
+        border-radius: 5px;
+        font-size: 3vw;
+        gap: 0.5rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+$medium: 768px;
+$small: 640px;
+$large: 981px;
+
+@media screen and (min-width: $large) {
+  .fortDiv {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0px;
+
+    .fortWraper {
+      display: flex;
+      flex-direction: row-reverse;
+      width: 90%;
+      justify-content: center;
+      align-items: center;
+      background-color: #f3f8fd;
+      border-radius: 10px;
+      padding: 2rem 1rem;
+      gap: 0rem;
+
+      .leftDiv {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        flex: 3;
+        justify-content: center;
+        align-items: center;
+        height: max-content;
+        padding: 1.3rem 0rem;
+
+        .img {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          max-width: 90%;
+          max-height: 360px;
+          margin-top: 0rem;
+
+          img {
+            height: 350px;
+            width: 400px;
+            border-radius: 45%;
+            overflow: hidden;
+          }
+        }
+
+        .sideSluh {
+          display: flex;
+          width: max-content;
+          gap: 7px;
+          font-size: 10px;
+          position: absolute;
+          background-color: white;
+          padding: 5px;
+          border-radius: 6px;
+          font-weight: lighter;
+          justify-content: center;
+          align-items: center;
+          left: 50px;
+          top: 7.5rem;
+        }
+        .sideSluhS {
+          display: flex;
+          width: max-content;
+          gap: 7px;
+          font-size: 10px;
+          position: absolute;
+          background-color: white;
+          padding: 5px;
+          border-radius: 6px;
+          font-weight: lighter;
+          justify-content: center;
+          align-items: center;
+          right: 80px;
+          bottom: 5rem;
+        }
+      }
+
+      .rigtDiv {
+        display: flex;
+        flex: 4;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        margin-bottom: 1rem;
+        gap: 1rem;
+
+        h3 {
+          text-align: start;
+          font-size: 2vw;
+          color: #29626f;
+          font-weight: bolder;
+          line-height: 25px;
+        }
+
+        ul {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 1rem;
+          width: 90%;
+          padding: 10px 0px;
+
+          li {
+            display: flex;
+            background-color: white;
+            justify-content: center;
+            align-items: center;
+            padding: 5px 10px;
+            border-radius: 10px;
+
+            .div {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              .ico {
+                display: flex;
+                background-color: #eaeffc;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                border-radius: 50%;
+                padding: 10px;
+                width: 30px;
+                height: 30px;
+                max-width: 60px;
+                max-height: 60px;
+
+                img {
+                  display: flex;
+                  width: 30px;
+                  height: 30px;
+                  max-width: 60px;
+                  max-height: 60px;
+                }
+              }
+
+              span {
+                background-color: inherit;
+                font-size: 1.2vw;
+              }
+            }
+          }
+        }
+
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          color: #29626f;
+          padding: 10px 15px;
+          width: 50%;
+          border-radius: 5px;
+          font-size: 1.5vw;
+          gap: 0.5rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
