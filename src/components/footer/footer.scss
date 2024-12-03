@@ -17,6 +17,11 @@
       flex-direction: column;
       color: #29626f;
 
+      h2 {
+        display: flex;
+        cursor: pointer;
+      }
+
       .divIcon {
         display: flex;
         gap: 0.5rem;
